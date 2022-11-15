@@ -11,7 +11,7 @@ function save2tif (fname, Img)
 	tagstruct.Compression = Tiff.Compression.LZW; %None;
 	tagstruct.SampleFormat = Tiff.SampleFormat.UInt;
 	tagstruct.Photometric = Tiff.Photometric.MinIsBlack;
-	tagstruct.BitsPerSample = 16; % 16; % info.BitsPerSample; % 32;
+	tagstruct.BitsPerSample = 32; % 16; % info.BitsPerSample; % 32;
 	tagstruct.SamplesPerPixel = 1;
 	tagstruct.PlanarConfiguration = Tiff.PlanarConfiguration.Chunky;
 	t.setTag(tagstruct);

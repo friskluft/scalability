@@ -4,7 +4,7 @@
 
 % Read the target image 
 T_raw = imread ('Siemens_star_(128_spokes)_&_Matlab_code.tif');
-T = uint16 (T_raw(:,:,1)) .* 256;
+T = uint32 (T_raw(:,:,1)) .* 256;
 %imshow(T);
 
 % Inscribed square
