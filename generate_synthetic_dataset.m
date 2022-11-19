@@ -7,9 +7,9 @@ fnamePattern = 'synthetic_nrois=%d_roiarea=%d.tif';     % Pattern blahblah_axisn
                                                         % is interpretable by Nyxus to layout timing 
                                                         % results properly
 
-roiArea = [100*100]; %[10 100 500 10^3 10^4 10^5 10^6];
-nRois = [1]; %[10 50 100 500 1000 10000 100000 500000 100000];
-gap = 5;
+roiArea = [10 100 500 10^3 10^4 10^5 10^6];
+nRois = [10 50 100 500 1000 10000 100000 500000 100000];
+gap = 5;  % Gap between ROIs in pixels
 
 %% 
 for i_area = 1:length(roiArea)
